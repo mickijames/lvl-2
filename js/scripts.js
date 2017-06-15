@@ -6,13 +6,16 @@ function setDate() {
     const now = new Date();
 
     const seconds = now.getSeconds();
-    const mins = now.getMinutes();
-    const hour = now.getHours();
+    var mins = now.getMinutes();
+    var hour = now.getHours();
+    
+    if (mins < 10)
+        mins = '0' + mins;
+    if (hour > 12)
+        hour = hour - 12;
     
     rotateHands(seconds, mins, hour);
     displayDigital(mins, hour);
-//    const template = `<div> ${hour} + ':' + ${mins} </div>`;
-//    const div = document.createElement('div');
 }
 
 function rotateHands(seconds, mins, hour) {
