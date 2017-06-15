@@ -1,7 +1,7 @@
 /* Stylesheet */
 /* line 3, /Users/mickijames/GitHub/lvl-2/css/styles.scss */
 html {
-  background: #fff;
+  background: url(/img/confused_dog.jpg) right no-repeat, black;
   font-family: 'helvetica neue';
   text-align: center;
   font-size: 10px; }
@@ -15,27 +15,31 @@ body {
   align-items: center; }
 
 /* line 19, /Users/mickijames/GitHub/lvl-2/css/styles.scss */
+h2 {
+  color: #fff; }
+
+/* line 23, /Users/mickijames/GitHub/lvl-2/css/styles.scss */
 .clock {
   width: 30rem;
   height: 30rem;
-  border: 20px solid black;
+  border: 20px solid #00ff1d;
   border-radius: 50%;
   margin: 50px auto;
   position: relative;
   padding: 2rem; }
 
-/* line 29, /Users/mickijames/GitHub/lvl-2/css/styles.scss */
+/* line 33, /Users/mickijames/GitHub/lvl-2/css/styles.scss */
 .clock-face {
   position: relative;
   width: 100%;
   height: 100%;
   transform: translateY(-3px); }
 
-/* line 36, /Users/mickijames/GitHub/lvl-2/css/styles.scss */
+/* line 40, /Users/mickijames/GitHub/lvl-2/css/styles.scss */
 .hand {
   width: 50%;
   height: 6px;
-  background: black;
+  background: #fff;
   position: absolute;
   top: 50%;
   transform-origin: 100%;
